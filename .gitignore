@@ -1,0 +1,9 @@
+#Ignore these objects when pushing to remote
+
+#Fortran object and module files
+*.o
+*.mod
+
+#Backups
+*~
+*.exe
