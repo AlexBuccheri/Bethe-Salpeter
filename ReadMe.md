@@ -9,4 +9,5 @@ Key features:
 * Molecular systems only
 * Full BSE (not restricted to Tamm-Dancoff approximation)
 * Monopole approximation for terms beyond nearest neighbours 
+* Compute optical absorption spectra and optical band gaps 
 * Tested up to 6000 atoms (as of 2017) 
