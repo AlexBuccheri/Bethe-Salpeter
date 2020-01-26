@@ -14,6 +14,7 @@ module bse
   use exbnd,   only: construct_H2p,construct_H2p_v2,orthogonal_construct_H2p,&
                      orthogonal_construct_h2p_k2, serial_orth_construct_H2p
                      !TEST_H2p, construct_H2p_onsite
+  !use kernel  - All required routines are in here instead
   use sort,    only: reallocate
 
   !Test module for BSE, not under version control
@@ -90,6 +91,14 @@ contains
     !****************
     call cpu_time(t1_local)
 
+
+    !Library
+    ! Call read_data()
+    ! Call initialise_data()
+    !If 
+
+
+    
     !Determine Ne and Nh for Np pair-products in the basis
     if(Ne==1 .and. Nh==1) call get_single_particle_basis(eigen,Np, Ne,Nh,tl)
 
