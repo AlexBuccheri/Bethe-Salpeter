@@ -21,6 +21,14 @@ module bse
   !use kernels, only: orbital_integral_sys,resonant_h2p,construct_H2p_zeroth,&
   !                   test_H2p,dbtest_H2p
 
+
+  !> Type containing size of two-particle basis 
+  type two_particle_basis_type
+     !>
+     integer :: n_occupied
+     integer :: n_virtual
+  end type two_particle_basis_type
+  
   !Interfaces
   !Matrix-vector product in TD approximation
   interface mvp_TD
